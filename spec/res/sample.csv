@@ -1,0 +1,23 @@
+Id,Story,Labels,Iteration,Iteration Start,Iteration End,Story Type,Estimate,Current State,Created at,Accepted at,Deadline,Requested By,Owned By,Description,URL
+5197034,Test Data Tool,"",1,"Sep 19, 2010","Sep 25, 2010",feature,,unstarted,"Sep 16, 2010",,,Robin Spainhour,Robin Spainhour,"Tool to enable developers to quickly extract relevant data from production in order to do fault isolation in a development environment.
+
+First version of the tool is done when we can extract enough data to reproduce Nordnet's campaign report (id 24185) locally.",http://www.pivotaltracker.com/story/show/5197034
+5196945,Parameterize report URLs,"",1,"Sep 19, 2010","Sep 25, 2010",feature,,unstarted,"Sep 16, 2010",,,Per Mellqvist,kalle widell,,http://www.pivotaltracker.com/story/show/5196945
+5196936,New Report for Telenor,"",1,"Sep 19, 2010","Sep 25, 2010",feature,,unstarted,"Sep 16, 2010",,,Per Mellqvist,kalle widell,,http://www.pivotaltracker.com/story/show/5196936
+5197686,Costs per site (or ad groups),"",,,,feature,,unscheduled,"Sep 16, 2010",,,Per Mellqvist,,E.g. Max Price and Static Costs,http://www.pivotaltracker.com/story/show/5197686
+5197248,Two report from KR's system that are priority for Jens,"",,,,feature,,unscheduled,"Sep 16, 2010",,,Robin Spainhour,,,http://www.pivotaltracker.com/story/show/5197248
+5197208,Report Catalog,"",,,,feature,,unscheduled,"Sep 16, 2010",,,Robin Spainhour,,"Inventory of our current reports. 
+Usage stats, time to execute
+Who uses the reports
+etc.",http://www.pivotaltracker.com/story/show/5197208
+5197191,Automatic Acceptance Tests,"",,,,feature,,unscheduled,"Sep 16, 2010",,,Robin Spainhour,,,http://www.pivotaltracker.com/story/show/5197191
+5197188,Complete Campaign Report for WWF,"",,,,feature,,unscheduled,"Sep 16, 2010",,,Robin Spainhour,,,http://www.pivotaltracker.com/story/show/5197188
+5197175,Developer's DB,"",,,,feature,,unscheduled,"Sep 16, 2010",,,Robin Spainhour,,"Create a baseline database for development use. (To avoid having to copy 50+ GB of data.)
+
+It should include:
+- a minimalistic schema definition
+- campaign config data setup (possibly using factory girl)
+- sql script for z-table setups.
+
+
+",http://www.pivotaltracker.com/story/show/5197175
