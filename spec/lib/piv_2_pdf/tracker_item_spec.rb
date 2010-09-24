@@ -14,5 +14,11 @@ describe Piv2Pdf::TrackerItem do
     lambda { Piv2Pdf::TrackerItem.new(bad) }.should raise_error(Piv2Pdf::TrackerItem::MSG_UNSUPPORTED_TYPE)
   end
   
-  it "should provide reader methods corresponding to the keys in the underlying hash like object"
+  it "should provide reader methods corresponding to the keys in the underlying hash like object" do
+    values = {"key_one" => 1, "key_two" => "two"}
+    item = Piv2Pdf::TrackerItem.new(values)
+    item.key_one.should == 1
+    item.key_two.should == "two"
+  end
+    
 end

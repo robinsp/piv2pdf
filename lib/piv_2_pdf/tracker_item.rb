@@ -4,7 +4,11 @@ module Piv2Pdf
 
     def initialize(hash_like_object)
       raise MSG_UNSUPPORTED_TYPE  unless hash_like_object.respond_to?(:[])
+      @values = hash_like_object
     end
-    
+
+    def method_missing(sym)
+      return @values[sym.to_s]
+    end
   end
 end
