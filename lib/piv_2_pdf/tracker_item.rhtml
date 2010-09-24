@@ -3,13 +3,17 @@
 <html> 
               
 <head> 
+<style type="text/css">
+   div.item {
+   page-break-after: always;
+   }
+</style>
 <title></title>
 </head>
 <body>
 
-
 <% @items.each do |item| %>
-<div>
+<div class="item">
   <span><%= item.story %></span>
 </div>
 <%end%>
