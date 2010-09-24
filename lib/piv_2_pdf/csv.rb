@@ -5,7 +5,10 @@ module Piv2Pdf
     attr_reader :items
     
     def initialize(csv_filename)
-      @items = FasterCSV.table(csv_filename)
+      @items = []
+      FasterCSV.table(csv_filename).each do |row|
+        @items << TrackerItem.new(row)
+      end
     end
   end
 end
