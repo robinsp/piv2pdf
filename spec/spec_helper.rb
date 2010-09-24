@@ -1,2 +1,3 @@
 
-SPEC_RESOURCES = "/home/robin/src/piv-to-pdfkit/spec/res"
+SPEC_ROOT = File.dirname(__FILE__)
+SPEC_RESOURCES = SPEC_ROOT + "/res"
