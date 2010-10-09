@@ -8,7 +8,7 @@ module Piv2Pdf
     end
 
     def method_missing(sym)
-      return @values[sym]
+      return @values[sym.to_s]
     end
   end
 end
