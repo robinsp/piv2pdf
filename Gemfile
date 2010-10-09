@@ -1,6 +1,7 @@
 source :gemcutter
 
 gem "fastercsv"
+gem "pdfkit"
 
 group :test do
   gem "autotest"
