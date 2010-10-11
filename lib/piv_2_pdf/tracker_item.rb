@@ -7,8 +7,16 @@ module Piv2Pdf
       @values = hash_like_object
     end
 
+    def id
+      @values[:id]
+    end
+
+    def type
+      @values[:type] || "n/a"
+    end
+
     def method_missing(sym)
-      return @values[sym.to_s]
+      return (@values[sym] || @values[sym.to_s])
     end
   end
 end

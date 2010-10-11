@@ -14,7 +14,38 @@
 
 <% @items.each do |item| %>
 <div class="item">
-  <span><%= item.story %></span>
+  <table>
+    <thead/>
+    <tbody>
+      <tr>
+        <th>Id</th>
+        <th>State</th>
+        <th>Type</th>
+        <th>Estimate</th>
+      </tr>
+      <tr>
+        <td><%= item.id %></td>
+        <td><%= item.state %></td>
+        <td><%= item.type %></td>
+        <td><%= item.estimate %></td>
+      </tr>
+      <tr>
+        <th>Requested by</th>
+        <th>Owner</th>
+      </tr>
+
+      <tr>
+        <td><%= item.requested_by %></td>
+        <td><%= item.owner %></td>
+      </tr>
+
+      <tr>
+        <td><%= item.story %></td>
+      </tr>
+
+    </tbody>
+  </table>
+  
 </div>
 <%end%>
 

@@ -15,10 +15,23 @@ describe Piv2Pdf::TrackerItem do
   end
   
   it "should provide reader methods corresponding to the keys in the underlying hash-like object" do
-    values = {"key_one" => 1, "key_two" => "two"}
+    values = {"key_one" => 1, :key_two => "two"}
     item = Piv2Pdf::TrackerItem.new(values)
     item.key_one.should == 1
     item.key_two.should == "two"
   end
-    
+
+  it "should override #id" do
+    values = {:id => 101}
+    item = Piv2Pdf::TrackerItem.new(values)
+    item.id.should == 101
+  end
+
+  it "should override #type" do
+    values = {:type => 101}
+    item = Piv2Pdf::TrackerItem.new(values)
+    item.type.should == 101
+  end
+  
+  
 end

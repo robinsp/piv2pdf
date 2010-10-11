@@ -4,7 +4,11 @@ GEM
     autotest (4.4.1)
     diff-lcs (1.1.2)
     fastercsv (1.5.3)
+    nokogiri (1.4.3.1)
     pdfkit (0.4.6)
+    rack (1.2.1)
+    rack-test (0.5.6)
+      rack (>= 1.0)
     rspec (2.0.0.beta.22)
       rspec-core (= 2.0.0.beta.22)
       rspec-expectations (= 2.0.0.beta.22)
@@ -15,6 +19,10 @@ GEM
     rspec-mocks (2.0.0.beta.22)
       rspec-core (= 2.0.0.beta.22)
       rspec-expectations (= 2.0.0.beta.22)
+    webrat (0.7.1)
+      nokogiri (>= 1.2.0)
+      rack (>= 1.0)
+      rack-test (>= 0.5.3)
 
 PLATFORMS
   ruby
@@ -24,3 +32,4 @@ DEPENDENCIES
   fastercsv
   pdfkit
   rspec (= 2.0.0.beta.22)
+  webrat
