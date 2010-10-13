@@ -11,10 +11,6 @@ module Piv2Pdf
       @values[:id]
     end
 
-    def type
-      @values[:type] || "n/a"
-    end
-
     def method_missing(sym)
       return (@values[sym] || @values[sym.to_s])
     end

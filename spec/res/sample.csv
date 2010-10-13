@@ -1,18 +1,107 @@
-Id,Story,Labels,Iteration,Iteration Start,Iteration End,Story Type,Estimate,Current State,Created at,Accepted at,Deadline,Requested By,Owned By,Description,URL
-5197034,Test Data Tool,"",1,"Sep 19, 2010","Sep 25, 2010",feature,,unstarted,"Sep 16, 2010",,,Robin Spainhour,Robin Spainhour,"Tool to enable developers to quickly extract relevant data from production in order to do fault isolation in a development environment.
+Id,Story,Labels,Iteration,Iteration Start,Iteration End,Story Type,Estimate,Current State,Created at,Accepted at,Deadline,Requested By,Owned By,Description,URL,Note,Note,Note,Task,Task Status,Task,Task Status,Task,Task Status,Task,Task Status,Task,Task Status
+5457031,Net duplication in Campaign Report,"",4,"Oct 7, 2010","Oct 13, 2010",bug,,accepted,"Oct 1, 2010","Oct 7, 2010",,Magnus Ljadas,Kalle Ravn,"Campaign report 25022 and 25023 shows N/A in the ""Net duplication"" column",http://www.pivotaltracker.com/story/show/5457031
+5528498,Quickly Rendered For Today,"",4,"Oct 7, 2010","Oct 13, 2010",feature,0,accepted,"Oct 6, 2010","Oct 7, 2010",,Per Mellqvist,Kalle Ravn,"In order to get a feeling for the current status of an ongoing campaign
+As a Client or Traffic
+I want gross numbers on the campaign, including as recent data as possible in an interface where the page loads without wait time",http://www.pivotaltracker.com/story/show/5528498
+5547650,Fixed bug making large numbers becoming invalid in reports,"",4,"Oct 7, 2010","Oct 13, 2010",bug,,accepted,"Oct 7, 2010","Oct 8, 2010",,Kalle Ravn,Kalle Ravn,Numbers larger than 1 billion became invalid due to bad class check,http://www.pivotaltracker.com/story/show/5547650
+5546222,Fixed error with eCPO index comparison,"",4,"Oct 7, 2010","Oct 13, 2010",bug,,accepted,"Oct 7, 2010","Oct 8, 2010",,Kalle Ravn,Kalle Ravn,"Division in the wrong order, see report #25156 (lower right corner). It behaves exactly in the opposite of all other index comparisons.",http://www.pivotaltracker.com/story/show/5546222
+5567420,Add date range functions to adams report in reporting app,"",4,"Oct 7, 2010","Oct 13, 2010",chore,,accepted,"Oct 8, 2010","Oct 8, 2010",,Kalle Ravn,Kalle Ravn,,http://www.pivotaltracker.com/story/show/5567420
+5553187,Clean adactiondb4 - disk almost full,"",4,"Oct 7, 2010","Oct 13, 2010",chore,,accepted,"Oct 7, 2010","Oct 8, 2010",,Kalle Ravn,Kalle Ravn,,http://www.pivotaltracker.com/story/show/5553187
+5410747,Install reporting server,"",4,"Oct 7, 2010","Oct 13, 2010",chore,,accepted,"Sep 29, 2010","Oct 11, 2010",,Kalle Ravn,Kalle Ravn,,http://www.pivotaltracker.com/story/show/5410747,,,,Virtualize,not completed,Chefify,not completed,Set up Reporting,not completed,Order more memory for the box,not completed
+5604936,Make sure slave database is in sync with master before starting reports,"",4,"Oct 7, 2010","Oct 13, 2010",chore,,accepted,"Oct 11, 2010","Oct 12, 2010",,Kalle Ravn,Kalle Ravn,,http://www.pivotaltracker.com/story/show/5604936,"Check solution in StatisticsDatabase in project reporting (Kalle Ravn - Oct 11, 2010)","also, do this before the report is sent by e-mail to avoid ""unknown""? (Kalle Ravn - Oct 11, 2010)"
+5474277,Health check for tbl_stats_ad_delta via pingdom-ad/icinga-ad,"",4,"Oct 7, 2010","Oct 13, 2010",chore,,accepted,"Oct 3, 2010","Oct 12, 2010",,Kalle Ravn,kalle widell,pingdom and icinga performs ad impressions on the system in order to know when it's up or down. This ad can be used to check if the figures in tbl_stats_ad_delta has been screwed up by comparing it to the z-table.,http://www.pivotaltracker.com/story/show/5474277
+5483433,"""Order Analysis Report"" tar inte hänsyn till valt datuminterval-","",4,"Oct 7, 2010","Oct 13, 2010",bug,,finished,"Oct 4, 2010",,,Fredrik Stenberg,kalle widell,"""Order Analysis Report"" tar inte hänsyn till valt datuminterval. Rapporterat av Emelie. Tog istället hela kampanjperioden. ",http://www.pivotaltracker.com/story/show/5483433
+5197686,Max price per ad group,"",4,"Oct 7, 2010","Oct 13, 2010",feature,2,started,"Sep 16, 2010",,,Per Mellqvist,Robin Spainhour,E.g. Max Price and Static Costs,http://www.pivotaltracker.com/story/show/5197686,"Feature is limited to CPM and CPC. 
+Present warning if price is set for other types of cost strategies.
 
-First version of the tool is done when we can extract enough data to reproduce Nordnet's campaign report (id 24185) locally.",http://www.pivotaltracker.com/story/show/5197034
-5196945,Parameterize report URLs,"",1,"Sep 19, 2010","Sep 25, 2010",feature,,unstarted,"Sep 16, 2010",,,Per Mellqvist,kalle widell,,http://www.pivotaltracker.com/story/show/5196945
-5196936,New Report for Telenor,"",1,"Sep 19, 2010","Sep 25, 2010",feature,,unstarted,"Sep 16, 2010",,,Per Mellqvist,kalle widell,,http://www.pivotaltracker.com/story/show/5196936
-5197686,Costs per site (or ad groups),"",,,,feature,,unscheduled,"Sep 16, 2010",,,Per Mellqvist,,E.g. Max Price and Static Costs,http://www.pivotaltracker.com/story/show/5197686
-5197248,Two report from KR's system that are priority for Jens,"",,,,feature,,unscheduled,"Sep 16, 2010",,,Robin Spainhour,,,http://www.pivotaltracker.com/story/show/5197248
-5197208,Report Catalog,"",,,,feature,,unscheduled,"Sep 16, 2010",,,Robin Spainhour,,"Inventory of our current reports. 
-Usage stats, time to execute
-Who uses the reports
-etc.",http://www.pivotaltracker.com/story/show/5197208
-5197191,Automatic Acceptance Tests,"",,,,feature,,unscheduled,"Sep 16, 2010",,,Robin Spainhour,,,http://www.pivotaltracker.com/story/show/5197191
+ (Robin Spainhour - Oct 6, 2010)",,,GUI to group ads into AdGroups,not completed,Trigger rebalancing of max price during running of report,not completed,Reinstate compression of tbl_stats_ad_delta,not completed
+5550756,"Date problem in ""Orders per Client"" report","",4,"Oct 7, 2010","Oct 13, 2010",bug,,finished,"Oct 7, 2010",,,Magnus Ljadas,kalle widell,"Klipper en dag för tidigt i excelen på Ordersfliken. 
+Det verkar som att det blir rätt i de övriga delarna av rapporten.
+
+Det verkar som om både startdatum och slutdatum sätts med tidpunkten 00:00:00
+För att fixa det behöver ni ändra så att slutdatum sätts med tidpunkten 23:59:59 alt. att ni räknar upp slutdatum med en dag och kör på 00:00:00
+
+Exempel: 25405 och 25406",http://www.pivotaltracker.com/story/show/5550756
+5549173,Byt url på pdf/xls rapportfiler,"",4,"Oct 7, 2010","Oct 13, 2010",feature,0,finished,"Oct 7, 2010",,,Per Mellqvist,Kalle Ravn,För att få ett vettigt filnamn på nedladdade filer ... ,http://www.pivotaltracker.com/story/show/5549173
+5549727,"Allow trackers to be categorized as ""level""","",4,"Oct 7, 2010","Oct 13, 2010",feature,1,started,"Oct 7, 2010",,,Per Mellqvist,Kalle Ravn,"In order to simplify the report order form, and make reports with tracker information easier to understand
+As a Traffic
+I want to configure each tracker with a level (1-4), give each level a name that is meaningful to me (""landing pages"" etc), and use the meaningful name in reports",http://www.pivotaltracker.com/story/show/5549727,"Should also be reflected in the ordering of trackers whenever displayed (Per Mellqvist - Oct 7, 2010)"
+5655111,Add date_to to CampaignsController#today,"",4,"Oct 7, 2010","Oct 13, 2010",chore,,started,"Oct 13, 2010",,,Kalle Ravn,Kalle Ravn,,http://www.pivotaltracker.com/story/show/5655111
+5659179,Changing receivers for scheduled reports,"",,,,bug,,unscheduled,"Oct 13, 2010",,,Fredrik Stenberg,,"Today we have to delete a scheduled report and start a new in order to change receiver, it'd be more user friendly if we could just edit the receiver.",http://www.pivotaltracker.com/story/show/5659179
+5631180,Custom report for Carat,"",,,,feature,,unscheduled,"Oct 12, 2010",,,Fredrik Stenberg,,Carat have requested to add product groups to campaign report,http://www.pivotaltracker.com/story/show/5631180
+5592338,Introduce Bundler for Admin,"",,,,chore,,unscheduled,"Oct 10, 2010",,,Robin Spainhour,,,http://www.pivotaltracker.com/story/show/5592338
+5553007,% of order value must be included in reports if entered,"",,,,feature,,unscheduled,"Oct 7, 2010",,,Fredrik Stenberg,,"""% of order value"" must be present in reports if it is entered for a campaign. This applies to all reports where media costs are calculated",http://www.pivotaltracker.com/story/show/5553007
+5549990,Add order information to Raw Tracking Report,"",,,,feature,,unscheduled,"Oct 7, 2010",,,Per Mellqvist,,"In order to see information on all orders (not just related to some campaign)
+As a Client or Traffic
+I want to have a table in the Raw Tracking Report that displays order count, and value for CT and Advertised orders per campaign, and for No-campaign orders. (Note that the campaign with CT credit may have stopped running before the start date of the report)",http://www.pivotaltracker.com/story/show/5549990
+5549907,Incorrect Visits count in Raw Tracking Report,"",,,,bug,,unscheduled,"Oct 7, 2010",,,Per Mellqvist,,"Several trackers have a higher Visitor count, than Visit count
+https://admin.adaction.se/networks/46/clients/369-holiday-autos/tracking_campaigns/170-holiday-autos-tracking-v5/reports/25399
+",http://www.pivotaltracker.com/story/show/5549907
+5549868,Raw Tracking Report should have N/A in visits column if order or lead,"",,,,bug,,unscheduled,"Oct 7, 2010",,,Per Mellqvist,,,http://www.pivotaltracker.com/story/show/5549868
+5549584,Fix column group names in Periodical Campaign Report,"",,,,bug,,unscheduled,"Oct 7, 2010",,,Per Mellqvist,,"""Varför synd det bara en trea istället för CT i listan""",http://www.pivotaltracker.com/story/show/5549584
+5549459,Consistent naming of columns in all reports,"",,,,chore,,unscheduled,"Oct 7, 2010",,,Per Mellqvist,,"eCPO för alla ordrar benämns på flera olika sätt i olika rapporter trots att de har samma betydelse, dvs CT+VT . De benämns som:
+
+ 
+
+CPO all
+
+CPO advertised
+
+CPO reach ( i simple cost report)
+
+ 
+
+Det skiljer sig också på leads och ordrar i samma rapport. Ex. så skriver vi All på CT+VT på Leadskolumnen fast vi skriver Advertised på CT+Vt i orderkolumnen.
+
+ 
+
+För leads så kommer ibland bara CT kolumnen upp och ibland CT och All –kolumnen. Varför kommer bara CT-kolumnen upp ibland och inte All?
+
+ 
+
+En aningens förvirrande och onödigt. Borde stå advertised på samtliga istället för en massa olika ord som ändå har samma betydelse.
+
+ 
+",http://www.pivotaltracker.com/story/show/5549459
+5549368,Clean out V4-specific code,"",,,,chore,,unscheduled,"Oct 7, 2010",,,Per Mellqvist,,"In order to simplify code
+As a developer
+I want all old V4-specific code removed",http://www.pivotaltracker.com/story/show/5549368
+5549358,"Include VT orders in creatives report, even if orders through trackers","",,,,feature,,unscheduled,"Oct 7, 2010",,,Per Mellqvist,,,http://www.pivotaltracker.com/story/show/5549358
+5549329,Replace TrackerCount with OrderCount where applicable,"",,,,chore,,unscheduled,"Oct 7, 2010",,,Per Mellqvist,,,http://www.pivotaltracker.com/story/show/5549329
+5549300,"Include clicks in delivery index in ""for today""","",,,,chore,,unscheduled,"Oct 7, 2010",,,Per Mellqvist,,"Applies to Campaign Report, For Today, Complete Campaign Report and ...?
+
+Complete Campaign Report is top priority of the above. ",http://www.pivotaltracker.com/story/show/5549300,"Important in Complete Campaign Report (Fredrik Stenberg - Oct 13, 2010)"
+5549275,Standardized Report Filtering,"",,,,feature,,unscheduled,"Oct 7, 2010",,,Per Mellqvist,,"In order to have a standardized selection and filtering mechanism
+As a Client or Traffic
+I want to be able to include/exclude campaigns, sites, trackers, products, creatives, dates",http://www.pivotaltracker.com/story/show/5549275
+5549129,Incorrect summary of impression frequency before order,"",,,,bug,,unscheduled,"Oct 7, 2010",,,Per Mellqvist,,Incorrect summary of impression frequency before order,http://www.pivotaltracker.com/story/show/5549129
+5528449,Improved PDF rendering,"",,,,feature,,unscheduled,"Oct 6, 2010",,,Per Mellqvist,,"In order to get the whole report output in my PDF
+As a Client
+I want either:
+- Scaling of output to ""fit to page""
+- Automatic split of wide tables
+- Tables rendered in with column names at an angle to reduce the column width",http://www.pivotaltracker.com/story/show/5528449
+5528348,Redefined Creatives Report,"",,,,feature,,unscheduled,"Oct 6, 2010",,,Per Mellqvist,,"In order to report campaigns where creatives are more important than sites/placements
+As a Client or Traffic
+I want to have a Creatives Report with a well chosen selection of columns (possible configurable when ordering the report), that I can run on any size campaign, or multiple campaigns",http://www.pivotaltracker.com/story/show/5528348
+5528292,Order Details Interface,"",,,,feature,,unscheduled,"Oct 6, 2010",,,Per Mellqvist,,"In order to compare item level information with clients' records, debug order implementations, and run custom analysis in excel
+As a Client or Traffic
+I want to have an interface where I can filter/select a number of orders, and view the detailed information on every single order line. Preferably with a choice of presented columns.",http://www.pivotaltracker.com/story/show/5528292
+5523387,Kartlägga vilken information som är (mest) intressant (för vem) i rapporterna,"",,,,chore,,unscheduled,"Oct 6, 2010",,,Magnus Ljadas,,,http://www.pivotaltracker.com/story/show/5523387
+5523371,Kartlägga vilka rapporter och grupperingar varje kolumn förkommer i,"",,,,chore,,unscheduled,"Oct 6, 2010",,,Magnus Ljadas,,,http://www.pivotaltracker.com/story/show/5523371
+5197248,Two report from KR's system that are priority for Jens,"",,,,feature,,unscheduled,"Sep 16, 2010",,,Robin Spainhour,,,http://www.pivotaltracker.com/story/show/5197248,"Adam agreed to bring more info on this to the next planning session (Oct 14th) (Robin Spainhour - Oct 5, 2010)"
+5483317,Add posibility to select multiple campaigns in a report,"",,,,feature,,unscheduled,"Oct 4, 2010",,,Fredrik Stenberg,,"Add posibility to select multiple campaigns in a report
+
+Conserns the following:
+Campaign Report
+Creatives Report
+Frequency Report",http://www.pivotaltracker.com/story/show/5483317,"Detta gäller spec Rapporten Cross Campaign Creatives. Kan ev vara fler. 
+
+Ska kunna välja flera i en lista.  
+
+Beställt av Emelie (kalle widell - Oct 4, 2010)","NOTE: Does not concern ""Cross Campaign"" (kalle widell - Oct 4, 2010)","The feature request needs to be investigated further. It is possible the requested feature is actually a work-around to get specific numbers, that deserve a specific report. (Robin Spainhour - Oct 5, 2010)"
 5197188,Complete Campaign Report for WWF,"",,,,feature,,unscheduled,"Sep 16, 2010",,,Robin Spainhour,,,http://www.pivotaltracker.com/story/show/5197188
-5197175,Developer's DB,"",,,,feature,,unscheduled,"Sep 16, 2010",,,Robin Spainhour,,"Create a baseline database for development use. (To avoid having to copy 50+ GB of data.)
+5197175,Developer's DB,"",,,,chore,,unscheduled,"Sep 16, 2010",,,Robin Spainhour,,"Create a baseline database for development use. (To avoid having to copy 50+ GB of data.)
 
 It should include:
 - a minimalistic schema definition
@@ -20,4 +109,10 @@ It should include:
 - sql script for z-table setups.
 
 
-",http://www.pivotaltracker.com/story/show/5197175
+
+
+",http://www.pivotaltracker.com/story/show/5197175,"Nedbrytning krävs. Förslag
+
+1. Kunna köra testsviten
+2. Diskutera vilket testadata som ska in (vilka UC's ska kunna utföras)
+3. Versionshantera schemat (kalle widell - Oct 4, 2010)"
