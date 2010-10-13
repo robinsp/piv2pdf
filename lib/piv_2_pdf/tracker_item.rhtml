@@ -4,9 +4,31 @@
               
 <head> 
 <style type="text/css">
-   div.item {
-   page-break-after: always;
-   }
+  body {
+  font-family:Verdana,Arial,Helvetica,sans-serif;
+  }
+  
+  
+  table
+  {
+  width: 100%;
+  border-collapse:collapse;
+  }
+  thead th, thead td
+  {
+  border: 1px solid black;
+  }
+
+  th {font-size: 0.5em;}
+  tr.story td {
+  font-size: 2.5em;
+  align: center;
+  padding-top: 1em;
+  }
+  div.item {
+  page-break-after: always;
+  }
+ 
 </style>
 <title></title>
 </head>
@@ -15,9 +37,8 @@
 <% @items.each do |item| %>
 <div class="item">
   <table>
-    <thead/>
-    <tbody>
-      <tr>
+    <thead>
+<tr>
         <th>Id</th>
         <th>State</th>
         <th>Type</th>
@@ -30,17 +51,20 @@
         <td><%= item.estimate %></td>
       </tr>
       <tr>
-        <th>Requested by</th>
-        <th>Owner</th>
+        <th colspan="2">Requested by</th>
+        <th colspan="2">Owner</th>
       </tr>
 
       <tr>
-        <td><%= item.requested_by %></td>
-        <td><%= item.owned_by %></td>
+        <td colspan="2"><%= item.requested_by %></td>
+        <td colspan="2"><%= item.owned_by %></td>
       </tr>
 
-      <tr>
-        <td><%= item.story %></td>
+      </thead>
+    <tbody>
+      
+      <tr class="story">
+        <td colspan="4"><%= item.story %></td>
       </tr>
 
     </tbody>
