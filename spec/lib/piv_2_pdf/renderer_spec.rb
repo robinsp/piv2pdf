@@ -9,11 +9,11 @@ describe Piv2Pdf::Renderer, "with a single item" do
   let(:item) do
     stub(:id => "4321",
          :story => "The Story Title",
-         :owner => "The Owner's name",
+         :owned_by => "The Owner's name",
          :estimate => "5",
          :requested_by => "Requester's name",
-         :type => "The type",
-         :state => "THe state"
+         :story_type => "The type",
+         :current_state => "THe state"
          )
   end
 
@@ -22,7 +22,7 @@ describe Piv2Pdf::Renderer, "with a single item" do
   end
   
 
-  [:story, :id, :state, :type, :estimate, :requested_by, :owner].each do |prop_name|
+  [:story, :id, :current_state, :story_type, :estimate, :requested_by, :owned_by].each do |prop_name|
     it "should have ##{prop_name} within a div tag" do
       @result.should have_selector("div.item", :content => item.send(prop_name) )
     end

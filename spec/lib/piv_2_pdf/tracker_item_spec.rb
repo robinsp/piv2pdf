@@ -27,11 +27,4 @@ describe Piv2Pdf::TrackerItem do
     item.id.should == 101
   end
 
-  it "should override #type" do
-    values = {:type => 101}
-    item = Piv2Pdf::TrackerItem.new(values)
-    item.type.should == 101
-  end
-  
-  
 end

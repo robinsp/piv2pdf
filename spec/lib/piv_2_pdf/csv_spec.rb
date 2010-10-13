@@ -7,7 +7,7 @@ describe Piv2Pdf::Csv, "using canned csv file" do
 
   it "should have 10 items" do
     csv = Piv2Pdf::Csv.new(filename)
-    csv.should have(9).items
+    csv.should have(39).items
   end
 
   describe "a created item" do
