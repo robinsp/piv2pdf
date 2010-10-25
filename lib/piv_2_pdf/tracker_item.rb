@@ -1,3 +1,5 @@
+require 'cgi'
+
 module Piv2Pdf
   class TrackerItem
     MSG_UNSUPPORTED_TYPE = "I want an object that responds to [](key)"
@@ -9,6 +11,15 @@ module Piv2Pdf
 
     def id
       @values[:id]
+    end
+
+    def description
+      if @values[:description] == 0
+        return ""
+      else
+
+        CGI.escapeHTML(@values[:description] )
+      end
     end
 
     def method_missing(sym)

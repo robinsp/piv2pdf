@@ -27,4 +27,11 @@ describe Piv2Pdf::TrackerItem do
     item.id.should == 101
   end
 
+  it "should override #description" do
+    values = {:description => 0}
+    item = Piv2Pdf::TrackerItem.new(values)
+    item.description.should == ""
+  end
+  
+
 end
