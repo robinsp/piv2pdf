@@ -20,12 +20,11 @@ csv = Piv2Pdf::Csv.new("/home/robin/src/piv2pdf/spec/res/sample.csv")
 
 html = Piv2Pdf::Renderer.new(csv.items).render
 
-File.open('/home/robin/tmp/rs.html', 'r+') do |f|
+File.open('/home/robin/tmp/rs.html', 'w') do |f|
   f.write html
 end
 
 kit = PDFKit.new(html)
-#kit.stylesheets << '/path/to/pdf.css'
 kit.to_pdf # inline PDF
 kit.to_file('/home/robin/tmp/rs.pdf')
 
