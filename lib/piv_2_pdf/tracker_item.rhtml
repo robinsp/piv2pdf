@@ -9,6 +9,7 @@
 <style type="text/css">
   body {
   font-family:Verdana,Arial,Helvetica,sans-serif;
+  font-size: 100%;
   }
   
   
@@ -17,20 +18,29 @@
   width: 100%;
   border-collapse:collapse;
   }
+
   thead th, thead td
   {
   border: 1px solid black;
+  font-size: 1em;
   }
 
-  th {font-size: 0.5em;}
   tr.story td {
   font-size: 2.5em;
-  align: center;
-  padding-top: 1em;
+  text-align: center;
+  padding-top: 0.5em;
   }
+
+   td {
+  font-size: 1.5em;
+  }
+
+
   div.item {
   page-break-after: always;
   }
+
+
  
 </style>
 <title></title>
@@ -41,15 +51,16 @@
 <div class="item">
   <table>
     <thead>
-<tr>
+      <tr>
         <th>Id</th>
         <th>State</th>
         <th>Type</th>
         <th>Estimate</th>
       </tr>
+
       <tr>
         <td><%= item.id %></td>
-        <td><%= item.current_state %></td>
+        <td class="<%= item.current_state %>"><%= item.current_state %></td>
         <td><%= item.story_type %></td>
         <td><%= item.estimate %></td>
       </tr>
